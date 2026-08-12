@@ -1,0 +1,49 @@
+:root {
+  /* Mau sac thuong hieu */
+  --color-navy: #12233b;
+  --color-navy-deep: #0c1928;
+  --color-brass: #b8935a;
+  --color-brass-light: #d9bc8c;
+  --color-parchment: #fbf8f2;
+  --color-cream: #f5f1e8;
+  --color-charcoal: #2a2620;
+  --color-muted: #8a8477;
+  --color-border: #dcd5c4;
+  --color-error: #b3441e;
+  --color-error-bg: #fbeae3;
+  --color-success: #3b6d11;
+  --color-success-bg: #eaf3de;
+
+  /* Typography */
+  --font-serif: Georgia, "Times New Roman", serif;
+  --font-sans: "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --fs-xs: 12px;
+  --fs-sm: 13px;
+  --fs-base: 14px;
+  --fs-md: 15px;
+  --fs-lg: 18px;
+  --fs-xl: 24px;
+  --fs-2xl: 32px;
+  --fs-3xl: 40px;
+
+  /* Spacing (thang 4px) */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 20px;
+  --sp-6: 24px;
+  --sp-8: 32px;
+  --sp-10: 40px;
+  --sp-14: 56px;
+
+  /* Bo goc */
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+
+  /* Breakpoint tham chieu (dung trong media query, khong the dung bien trong @media) */
+  --bp-tablet: 900px;
+  --bp-mobile: 560px;
+}

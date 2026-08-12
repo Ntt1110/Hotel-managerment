@@ -1,0 +1,60 @@
+.statusRow {
+  margin-bottom: var(--sp-4);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--sp-4);
+  padding: 9px 0;
+  border-bottom: 1px solid var(--color-border);
+  font-size: var(--fs-sm);
+}
+
+.row:last-of-type {
+  border-bottom: none;
+}
+
+.rowLabel {
+  color: var(--color-muted);
+}
+
+.rowValue {
+  color: var(--color-charcoal);
+  font-weight: 600;
+  text-align: right;
+}
+
+.actionRow {
+  display: flex;
+  gap: var(--sp-3);
+  margin-top: var(--sp-5);
+}
+
+.actionBtn {
+  flex: 1;
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 10px 0;
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.actionPrimary {
+  background: var(--color-navy);
+  color: var(--color-cream);
+}
+
+.actionPrimary:hover {
+  background: var(--color-navy-deep);
+}
+
+.actionDanger {
+  background: var(--color-error-bg);
+  color: var(--color-error);
+}
+
+.actionDanger:hover {
+  opacity: 0.8;
+}

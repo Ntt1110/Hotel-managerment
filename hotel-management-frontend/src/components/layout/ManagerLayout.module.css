@@ -1,0 +1,75 @@
+.wrap {
+  display: flex;
+  min-height: 100vh;
+  background: var(--color-parchment);
+}
+
+.main {
+  flex: 1;
+  min-width: 0;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--sp-5) var(--sp-8);
+  background: #fff;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: var(--fs-xl);
+  color: var(--color-charcoal);
+  margin: 0;
+}
+
+.userBox {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-4);
+}
+
+.userName {
+  font-size: var(--fs-sm);
+  color: var(--color-muted);
+}
+
+.logoutBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 7px 12px;
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: var(--color-charcoal);
+  cursor: pointer;
+}
+
+.logoutBtn:hover {
+  background: var(--color-cream);
+}
+
+.content {
+  padding: var(--sp-8);
+}
+
+@media (max-width: 900px) {
+  .wrap {
+    flex-direction: column;
+  }
+
+  .topbar {
+    padding: var(--sp-4);
+    flex-wrap: wrap;
+    gap: var(--sp-3);
+  }
+
+  .content {
+    padding: var(--sp-5) var(--sp-4);
+  }
+}

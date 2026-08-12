@@ -1,0 +1,32 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--sp-6);
+}
+
+.status {
+  text-align: center;
+  color: var(--color-muted);
+  font-size: var(--fs-base);
+  padding: var(--sp-10) 0;
+}
+
+.empty {
+  text-align: center;
+  padding: var(--sp-10) var(--sp-6);
+  background: var(--color-cream);
+  border-radius: var(--radius-md);
+}
+
+.emptyTitle {
+  font-family: var(--font-serif);
+  font-size: var(--fs-lg);
+  color: var(--color-charcoal);
+  margin: 0 0 var(--sp-2);
+}
+
+.emptyDesc {
+  font-size: var(--fs-sm);
+  color: var(--color-muted);
+  margin: 0;
+}

@@ -1,0 +1,110 @@
+.card {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.thumb {
+  height: 140px;
+  background: linear-gradient(135deg, var(--color-navy), var(--color-navy-deep));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumb span {
+  font-family: var(--font-serif);
+  font-size: 48px;
+  color: var(--color-brass-light);
+}
+
+.body {
+  padding: var(--sp-4);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.headRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--sp-2);
+}
+
+.name {
+  font-family: var(--font-serif);
+  font-size: var(--fs-lg);
+  color: var(--color-charcoal);
+  margin: 0;
+}
+
+.roomNumber {
+  font-size: var(--fs-xs);
+  color: var(--color-muted);
+  white-space: nowrap;
+}
+
+.desc {
+  font-size: var(--fs-sm);
+  color: var(--color-muted);
+  line-height: 1.6;
+  margin: var(--sp-2) 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: var(--sp-2) 0 var(--sp-3);
+}
+
+.tag {
+  font-size: var(--fs-xs);
+  background: var(--color-cream);
+  color: var(--color-navy);
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+
+.footRow {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: var(--sp-3);
+  border-top: 1px solid var(--color-border);
+}
+
+.price {
+  font-size: var(--fs-md);
+  font-weight: 600;
+  color: var(--color-navy);
+}
+
+.perNight {
+  font-size: var(--fs-xs);
+  font-weight: 400;
+  color: var(--color-muted);
+}
+
+.viewBtn {
+  background: none;
+  border: none;
+  color: var(--color-brass);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  cursor: pointer;
+    text-decoration: none;
+}
+
+.viewBtn:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,112 @@
+.tableWrap {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--fs-sm);
+  min-width: 760px;
+}
+
+.table th {
+  text-align: left;
+  padding: var(--sp-3) var(--sp-4);
+  background: var(--color-cream);
+  color: var(--color-muted);
+  font-size: var(--fs-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
+.table td {
+  padding: var(--sp-3) var(--sp-4);
+  border-top: 1px solid var(--color-border);
+  color: var(--color-charcoal);
+}
+
+.code {
+  font-weight: 600;
+  color: var(--color-navy);
+}
+
+.price {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.status {
+  text-align: center;
+  color: var(--color-muted);
+  padding: var(--sp-8) 0;
+}
+
+.empty {
+  text-align: center;
+  padding: var(--sp-8) var(--sp-5);
+  background: var(--color-cream);
+  border-radius: var(--radius-md);
+}
+
+.emptyTitle {
+  font-family: var(--font-serif);
+  font-size: var(--fs-lg);
+  color: var(--color-charcoal);
+  margin: 0 0 var(--sp-2);
+}
+
+.emptyDesc {
+  font-size: var(--fs-sm);
+  color: var(--color-muted);
+  margin: 0;
+}
+
+.clickableRow {
+  cursor: pointer;
+}
+
+.clickableRow:hover {
+  background: var(--color-cream);
+}
+
+.actions {
+  display: flex;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.actionBtn {
+  border: none;
+  border-radius: 999px;
+  padding: 5px 12px;
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.actionPrimary {
+  background: var(--color-navy);
+  color: var(--color-cream);
+}
+
+.actionPrimary:hover {
+  background: var(--color-navy-deep);
+}
+
+.actionDanger {
+  background: var(--color-error-bg);
+  color: var(--color-error);
+}
+
+.actionDanger:hover {
+  opacity: 0.8;
+}
+
+.noAction {
+  color: var(--color-muted);
+  font-size: var(--fs-xs);
+}

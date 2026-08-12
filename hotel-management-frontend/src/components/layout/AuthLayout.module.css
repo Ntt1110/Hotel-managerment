@@ -1,0 +1,130 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+}
+
+.leftPanel {
+  flex: 1 1 42%;
+  min-width: 320px;
+  background: linear-gradient(
+    160deg,
+    var(--color-navy) 0%,
+    var(--color-navy-deep) 100%
+  );
+  color: var(--color-cream);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: var(--sp-14) var(--sp-10);
+  position: relative;
+  overflow: hidden;
+}
+
+.dotPattern {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    rgba(184, 147, 90, 0.13) 1px,
+    transparent 1px
+  );
+  background-size: 22px 22px;
+  pointer-events: none;
+}
+
+.brandMark {
+  font-family: var(--font-serif);
+  font-size: var(--fs-sm);
+  letter-spacing: 0.28em;
+  color: var(--color-brass-light);
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.heroContent {
+  z-index: 1;
+}
+
+.heroTitle {
+  font-family: var(--font-serif);
+  font-size: var(--fs-3xl);
+  line-height: 1.25;
+  margin: var(--sp-6) 0 var(--sp-3);
+  font-weight: 400;
+  max-width: 380px;
+}
+
+.heroSubtitle {
+  font-size: var(--fs-md);
+  line-height: 1.7;
+  color: #c9c2b2;
+  max-width: 340px;
+  margin: 0;
+}
+
+.illustrationWrap {
+  margin-top: var(--sp-3);
+}
+
+.footNote {
+  font-size: var(--fs-sm);
+  color: #8b93a3;
+  z-index: 1;
+}
+
+.rightPanel {
+  flex: 1 1 58%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--sp-10) var(--sp-6);
+}
+
+.formSlot {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Tablet: thu nho panel trai, giam padding */
+@media (max-width: 900px) {
+  .leftPanel {
+    padding: var(--sp-10) var(--sp-6);
+  }
+
+  .heroTitle {
+    font-size: var(--fs-2xl);
+  }
+
+  .illustrationWrap svg {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* Mobile: chuyen sang xep chong, an panel trai chi con phan thuong hieu gon */
+@media (max-width: 560px) {
+  .page {
+    flex-direction: column;
+  }
+
+  .leftPanel {
+    flex: none;
+    min-width: 0;
+    padding: var(--sp-6) var(--sp-5);
+  }
+
+  .heroSubtitle,
+  .illustrationWrap,
+  .footNote {
+    display: none;
+  }
+
+  .heroTitle {
+    font-size: var(--fs-lg);
+    margin: var(--sp-2) 0 0;
+    max-width: none;
+  }
+
+  .rightPanel {
+    padding: var(--sp-6) var(--sp-4);
+  }
+}

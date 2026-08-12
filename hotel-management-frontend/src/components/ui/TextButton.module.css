@@ -1,0 +1,13 @@
+.textButton {
+  background: none;
+  border: none;
+  font-size: var(--fs-xs);
+  color: var(--color-muted);
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0;
+}
+
+.textButton:hover {
+  color: var(--color-charcoal);
+}

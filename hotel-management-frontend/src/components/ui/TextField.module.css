@@ -1,0 +1,37 @@
+.wrap {
+  margin-bottom: var(--sp-4);
+}
+
+.label {
+  display: block;
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: var(--color-charcoal);
+  margin-bottom: 7px;
+}
+
+.inputRow {
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  padding: 11px 14px;
+  font-size: var(--fs-base);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: #fff;
+  color: var(--color-charcoal);
+  outline: none;
+}
+
+.input:focus {
+  border-color: var(--color-brass);
+}
+
+.adornment {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
